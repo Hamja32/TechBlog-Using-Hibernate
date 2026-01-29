@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+	top:1px;
+	position:sticky;
+    background-color: #10294d;
+    z-index:5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Containers */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Forms (Login/Register/Add Blog) */
+.form-container {
+    max-width: 500px;
+    color: #333;
+    margin: 50px auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Blog Grid (Home Page) */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.blog-meta {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Blog Detail Page */
+.detail-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.comment-section {
+    margin-top: 3rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+       body {
+            background-color: #0d1117; /* GitHub Dark Mode Background */
+            color: #c9d1d9;
+            font-family: 'Roboto', sans-serif;
+        }
+        /* --- Dark Mode Card Styles --- */
+
+/* 1. Card Container */
+.card-dark {
+    background-color: #161b22; /* Dark Grey Background */
+    border: 1px solid #30363d; /* Subtle Border */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover Effect: Glow Border */
+.card-dark:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff; /* Blue Glow */
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+}
+
+/* 2. Image Styling */
+.card-img-wrap {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #30363d;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0.9; /* Thoda dim kiya taaki aankhon me na chubhe */
+}
+
+/* Image Zoom on Hover */
+.card-dark:hover .card-img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* 3. Typography */
+.card-body-dark {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title-dark {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #c9d1d9; /* Soft White */
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.card-meta-dark {
+    font-size: 0.85rem;
+    color: #8b949e; /* Grey Text */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Courier New', monospace; /* Coding vibe */
+}
+
+.card-text-dark {
+    font-size: 0.95rem;
+    color: #8b949e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* 4. Neon Button */
+.btn-neon {
+    text-decoration: none;
+    color: #58a6ff; /* Neon Blue */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background: #0d1117;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-neon:hover {
+    background: #58a6ff;
+    color: #0d1117; /* Text black on hover */
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.5); /* Glowing Effect */
+    text-decoration: none;
+    border-color: #58a6ff;
+}
+    </style>
