@@ -4,6 +4,8 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  
   <servlet>
   	<servlet-name>LoginServlet</servlet-name>
   	<display-name>LoginServlet</display-name>
@@ -28,6 +30,13 @@
   	<description></description>
   	<servlet-class>myblog.servlet.AddBlogServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>myblog.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  
  
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
@@ -45,5 +54,10 @@
   	<servlet-name>AddBlogServlet</servlet-name>
   	<url-pattern>/AddBlogServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
