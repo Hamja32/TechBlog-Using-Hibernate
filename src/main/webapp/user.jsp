@@ -32,6 +32,7 @@ body {
     padding: 30px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    height: auto;
 }
 
 .profile-avatar {
@@ -100,7 +101,7 @@ body {
     margin-top: 10px;
 }
 .pic{
-	    width: 100%;
+	width: 100%;
     height: 60%;
     object-fit: cover;
     border-radius: 8px;
@@ -189,7 +190,7 @@ List<Blog> posts = PostDao.getPostsByUser(user);
         <% } %>
 
         <% for (Blog b : posts) { %>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="card post-card" style="cursor:pointer">
                     	<img class="pic" src="<%= b.getpPicUrl()%>">
                     <div class="card-body" style="margin-top: 10px">
